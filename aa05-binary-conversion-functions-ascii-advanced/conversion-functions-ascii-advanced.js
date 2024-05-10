@@ -15,7 +15,8 @@ function binaryToHexadecimal(blob) {
 
 /* Base 16 to base 2 */
 function hexadecimalToBinary(blob) {
-  // Your code here 
+  let dec = parseInt(blob, 16);
+  return '0b' + dec.toString(2);
 }
 
 /* Base 10 to ASCII */
@@ -25,17 +26,21 @@ function decimalToAscii(blob) {
 
 /* Base 2 to ASCII */
 function binaryToAscii(blob) {
-  // Your code here 
+  return String.fromCharCode(blob); 
 }
 
 /* Base 16 to ASCII */
 function hexadecimalToAscii(blob) {
-  // Your code here 
+  return String.fromCharCode(blob); 
 }
 
 /* ASCII to base 10 */
 function asciiToDecimal(blob) {
-  // Your code here 
+  let arr = []
+  for (let i = 0; i < blob.length; i++) {
+    arr.push(blob.charCodeAt(i))
+  }
+  return arr;
 }
 
 // console.log('Binary to hexadecimal:')
