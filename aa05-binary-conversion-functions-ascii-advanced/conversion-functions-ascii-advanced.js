@@ -7,7 +7,7 @@ Consult documentation on how to utilize the following methods:
   charCodeAt()
 */
 
-/* Base 2 to base 16 */   //str -> number -> 0x8
+/* Base 2 to base 16 */
 function binaryToHexadecimal(blob) {
   let base10 = parseInt(blob.substring(2), 2)
   return '0x' + base10.toString(16) 
@@ -15,7 +15,7 @@ function binaryToHexadecimal(blob) {
 
 /* Base 16 to base 2 */
 function hexadecimalToBinary(blob) {
-   
+  // Your code here 
 }
 
 /* Base 10 to ASCII */
